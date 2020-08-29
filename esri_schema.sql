@@ -1,14 +1,14 @@
 -- Create Four Tables
 CREATE TABLE us_hospitals(
   id TEXT PRIMARY KEY,
-  hospital_name TEXT,
+  hospital_name TEXT
 );
 
 CREATE TABLE hospitals_beds(
   id TEXT PRIMARY KEY REFERENCES us_hospitals(id),
-  licensed_beds TEXT,
-  icu_beds TEXT,
-  ventilator_usage TEXT
+  licensed_beds INT,
+  icu_beds INT,
+  ventilator_usage INT
 );
 CREATE TABLE hospitals_location(
   id TEXT PRIMARY KEY REFERENCES us_hospitals(id),
@@ -16,11 +16,12 @@ CREATE TABLE hospitals_location(
   hospital_hq_address TEXT,
   hospital_hq_city TEXT,
   hospital_hq_state TEXT,
-  hospital_hq_zip_code TEXT,
+  zip_code INT,
+  county_name TEXT,
   state_name TEXT
 );
 CREATE TABLE hospitals_geometry(
   id TEXT PRIMARY KEY REFERENCES us_hospitals(id),
-  lat TEXT,
-  lng TEXT,
+  lat FLOAT,
+  lng FLOAT
 );
