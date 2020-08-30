@@ -16,4 +16,4 @@ CREATE TABLE healthcare_census(
 	Noninsured_Males_18_25 TEXT,
 	Insured_Females_18_25 TEXT,
 	Noninsured_Females_18_25 TEXT
-	);
+);
