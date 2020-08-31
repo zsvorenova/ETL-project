@@ -1,7 +1,7 @@
-DROP TABLE IF EXISTS id_zip;
+DROP TABLE IF EXISTS ca_hospitals;
 DROP TABLE IF EXISTS staffing;
 
-CREATE TABLE id_zip (
+CREATE TABLE ca_hospitals (
 	hospital_id INT PRIMARY KEY NOT NULL, 
 	hospital_name VARCHAR NOT NULL, 
 	status VARCHAR NOT NULL,
@@ -10,7 +10,6 @@ CREATE TABLE id_zip (
 	city VARCHAR NOT NULL,
 	zip_code INT NOT NULL,
 	county VARCHAR NOT NULL,
-	county_code INT NOT NULL,
 	category VARCHAR NOT NULL,
 	lng FLOAT NOT NULL,
 	lat FLOAT NOT NULL,

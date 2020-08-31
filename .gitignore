@@ -128,5 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# local files
+# configuration files
 config.py
+
+# zuzana's files
+COPY-Hospital staffing-data cleaning.ipynb
