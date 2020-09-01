@@ -25,7 +25,7 @@ CREATE TABLE staffing (
 	FOREIGN KEY (hospital_id) REFERENCES ca_hospitals(hospital_id)
 );
 
-SELECT * FROM id_zip LIMIT 15;
+SELECT * FROM ca_hospitals LIMIT 15;
 
 SELECT * FROM staffing LIMIT 15;
 
