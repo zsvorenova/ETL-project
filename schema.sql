@@ -22,7 +22,7 @@ CREATE TABLE staffing (
 	staff_group VARCHAR NOT NULL,
 	prod_hrs INT,
 	prodhrs_adjptday FLOAT,
-	FOREIGN KEY (hospital_id) REFERENCES id_zip(hospital_id)
+	FOREIGN KEY (hospital_id) REFERENCES ca_hospitals(hospital_id)
 );
 
 SELECT * FROM id_zip LIMIT 15;
