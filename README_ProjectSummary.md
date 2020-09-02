@@ -1,12 +1,11 @@
-# ETL-project
-ETL project
+ETL Project Summary
 Project 2: ETL
 Ashley Kerber, B Daves, Oleg Ryzhov, Zuzana Svorenova, Gianni Adamo and Chioma Maduko
 
 Hypothetical Project:
-Look at California County Hospital profitability as relates to productivity by specialized job type
+Compare California Hospital profitability by productivity, by specialized healthcare job type
 If time allows - *Develop web page from short summary and tables*
-           	Future Project: Review profitability by procedure costs and insurance coverage?
+           	Future Project: Review profitability by procedure costs and insurance coverage
 
 Data:
 1.      Healthcare Census
@@ -40,7 +39,8 @@ Gianni, B, Zuzana & Chioma cleaned respective data sets, created schema for each
 Oleg tried to create a group server in GitHub by providing database credentials and SQL code, but we were unsuccessful in utilizing this tool.
 Zuzana pushed each branch to the master and resolved conflicts one at a time.         
                           	
-Extract: Definitive Healthcare: USA Hospital Beds - JSON data with API interaction, 
+Extract: 
+Definitive Healthcare: USA Hospital Beds - JSON data with API interaction, 
   Healthcare.gov – CSV data, 
    Hospital Data – CSV data, 
    Healthcare Census – CSV data, 
