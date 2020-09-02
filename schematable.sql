@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS profit;
-Create Table profit (
+Create Table hospitals_profit (
 		year INT NOT NULL, 
 		hospital_id INT Primary Key NOT NULL,
 		facility_number INT,
