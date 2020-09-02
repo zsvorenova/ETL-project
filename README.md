@@ -13,8 +13,7 @@ Data:
 3.      California Profitability
 4.      California Staffing & Productivity
 5.      Healthcare.gov Hospital Data
-6.     CHHS Crosswalk
-7.     CA Healthcare Facility Listing
+6.     CA Healthcare Facility Listing
 
 Transformation needed:
 Cleaning, joining, filtering and normalization
@@ -64,12 +63,12 @@ Identify gaps and areas of convolution – troubleshoot
     d. Hospital Name (not consistent in all data sets: inactive locations, name changes throughout time, location moves)
 
 We wanted to connect the datasets between each other without creating a new key.
-•	staffing and profitability datasets have identical ids (California state ids)
-•	census data and general info have as well same type of id even if different from staffing/profitability data (ids assigned by Medicare, they need to be transfer into the same format)
-•	for staffing/profitability data we have longitude and latitude available too (except of few lines, hospitals that were closed/relocated since 2013) + we have some additional hospital data (new hospitals/locations since 2013) as well
-•	general info and esri data have longitude and latitude data too
-•	unfortunately, esri ids seems to be just sequential data based on the csv file
-•	Longitude and latitude in profitability and staffing files and there are maybe only 1 or 2 duplicates, it seems like a similar, in general, info dataset. Not sure about esri data.
+ -staffing and profitability datasets have identical ids (California state ids)
+ - census data and general info have as well same type of id even if different from staffing/profitability data (ids assigned by Medicare, they need to be transfer into the same format)
+ - for staffing/profitability data we have longitude and latitude available too (except of few lines, hospitals that were closed/relocated since 2013) + we have some additional hospital data (new hospitals/locations since 2013) as well
+ - general info and esri data have longitude and latitude data too
+ - unfortunately, esri ids seems to be just sequential data based on the csv file
+ - Longitude and latitude in profitability and staffing files and there are maybe only 1 or 2 duplicates, it seems like a similar, in general, info dataset. Not sure about esri data.
 It seems that we would be able to connect most of the data through this 3 keys: California ids, Medicare ids, and longitude+latitude
 Another option would be to unify the addresses and try to use it as a key to connect.
 
