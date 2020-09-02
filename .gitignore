@@ -130,6 +130,7 @@ dmypy.json
 
 # configuration files
 config.py
+.DS_Store
 
 # zuzana's files
 COPY-Hospital staffing-data cleaning.ipynb
